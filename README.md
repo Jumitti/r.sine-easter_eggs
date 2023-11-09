@@ -50,3 +50,11 @@ Lists are in ```output``` folder
 - **Cond3**: single image for one word → ```unique_pictures.txt``` (e.g. https://r.sime.com/admin)
 <img style = "width: 100%; height: 100%;" src="https://r.sine.com/admin"/>
 
+## What is ```r``` file ?
+
+Looking for random words, I found https://r.sine.com/r. I don't know if it's a bug or if it's intentional, 
+but it's not an image. It's a piece of code that helps us understand how images are returned to us on https://r.sine.com/index.
+
+To my knowledge, this is the only piece of code I've been able to find from r.sine.
+
+
