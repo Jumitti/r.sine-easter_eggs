@@ -64,9 +64,9 @@ while True:
     else:
         print("Error. Please use 1 for Wikipedia and 2 for words_dictionary.json")
 
-    valid_content_to_words = {}
-    unique_valid_content_words = []
-    invalid_content_words = []
+    unique_picture = {}
+    unique_picture_for_one_word = []
+    random_pictures = []
 
     if word_list:
         for word in tqdm(word_list, "Running"):
@@ -78,37 +78,37 @@ while True:
             content1 = get_page_content(url)
 
             if content1 == '':
-                invalid_content_words.append(clean_word)
-            elif content1 in valid_content_to_words:
-                valid_content_to_words[content1].append(clean_word)
+                random_pictures.append(clean_word)
+            elif content1 in unique_picture:
+                unique_picture[content1].append(clean_word)
             else:
                 content2 = get_page_content(url)
 
                 if content1 == content2:
-                    valid_content_to_words[content1] = valid_content_to_words.get(content1, []) + [clean_word]
+                    unique_picture[content1] = unique_picture.get(content1, []) + [clean_word]
                 else:
-                    invalid_content_words.append(clean_word)
+                    random_pictures.append(clean_word)
 
-    if valid_content_to_words or invalid_content_words:
-        if valid_content_to_words:
+    if unique_picture or random_pictures:
+        if unique_picture:
             with open("output/unique_pictures.txt", "w") as file:
                 print("Create unique_pictures.txt")
-                for content, words in valid_content_to_words.items():
+                for content, words in unique_picture.items():
                     if len(words) == 1:
-                        unique_valid_content_words.append(words[0])
+                        unique_picture_for_one_word.append(words[0])
                         file.write(f"{words[0]}\n")
 
             with open("output/same_picture.txt", "w") as file:
                 print("Create same_picture.txt")
-                for content, words in valid_content_to_words.items():
+                for content, words in unique_picture.items():
                     if len(words) > 1:
                         for word in words:
                             file.write(f"{word}\n")
 
-        if invalid_content_words:
+        if random_pictures:
             with open("output/random_pictures.txt", "w") as file:
                 print("Create random_pictures.txt")
-                for word in invalid_content_words:
+                for word in random_pictures:
                     file.write(f"{word}\n")
 
         break
