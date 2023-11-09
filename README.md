@@ -58,3 +58,8 @@ but it's not an image. It's a piece of code that helps us understand how images 
 To my knowledge, this is the only piece of code I've been able to find from r.sine.
 
 
+## Disclaimer
+
+The images on r.sine.com may offend the sensibilities of users. If you do not have the majority (of your country), 
+I disclaim all responsibility for what you find on this site. This GitHub project is just a curiosity about another 
+Internet curiosity.
