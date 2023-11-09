@@ -40,14 +40,14 @@ After that, I made the script to limit the number of requests, but that's a tech
 
 Lists are in ```output``` folder
 
-- **Cond1**: random image → ```random_pictures.txt``` (e.g. https://r.sime.com/index for legal reasons, I don't display random images)
+- **Cond1**: random image → ```random_pictures.txt``` (e.g. https://r.sine.com/index for legal reasons, I don't display random images)
 
 
-- **Cond2**: buffer image used for several words → ```same_pictures.txt``` (e.g. https://r.sime.com/svrfgbsrgfv)
-<img style = "width: 100%; height: 100%;" src="https://r.sine.com/fvdfdfvdf"/>
+- **Cond2**: buffer image used for several words → ```same_pictures.txt``` (e.g. https://r.sine.com/nicetry)
+<img style = "width: 100%; height: 100%;" src="https://r.sine.com/nicetry"/>
 
 
-- **Cond3**: single image for one word → ```unique_pictures.txt``` (e.g. https://r.sime.com/admin)
+- **Cond3**: single image for one word → ```unique_pictures.txt``` (e.g. https://r.sine.com/admin)
 <img style = "width: 100%; height: 100%;" src="https://r.sine.com/admin"/>
 
 ## What is ```r``` file ?
