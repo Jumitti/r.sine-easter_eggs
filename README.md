@@ -44,7 +44,7 @@ Lists are in ```output``` folder
 
 
 - **Cond2**: buffer image used for several words → ```same_pictures.txt``` (e.g. https://r.sine.com/nicetry)
-<img style = "width: 100%; height: 100%;" src="https://r.sine.com/nicetry"/>
+I don't no why this one don't works to display the image<img style = "width: 100%; height: 100%;" src="https://r.sine.com/nicetry"/>
 
 
 - **Cond3**: single image for one word → ```unique_pictures.txt``` (e.g. https://r.sine.com/admin)
