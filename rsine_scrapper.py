@@ -1,9 +1,12 @@
+import concurrent.futures
+import json
+import os
+import random
+import re
+
 import requests
 from bs4 import BeautifulSoup
 from tqdm import tqdm
-import re
-import json
-import random
 
 
 def get_english_word_list():
@@ -33,8 +36,37 @@ def get_page_content(url):
     return None
 
 
+def process_word(word):
+    base_url = "https://r.sine.com/"
+    url = f"{base_url}{word}"
+
+    clean_word = re.sub(r'\([^)]*\)', '', word).strip()
+
+    content1 = get_page_content(url)
+
+    if content1 == '':
+        random_pictures.append(clean_word)
+    elif content1 in unique_picture:
+        unique_picture[content1].append(clean_word)
+    else:
+        content2 = get_page_content(url)
+
+        if content1 == content2:
+            unique_picture[content1] = unique_picture.get(content1, []) + [clean_word]
+        else:
+            random_pictures.append(clean_word)
+
+
 while True:
     word_list = []
+    unique_picture = {}
+    unique_picture_for_one_word = []
+    random_pictures = []
+
+    num_threads = os.cpu_count()
+    use_threads = num_threads - 2
+    print(f"{use_threads} threads used for the script.")
+
     list_of_words = input("Use Wikipedia (1) or words_dictionary.json (2) ? ")
 
     if list_of_words == '1':
@@ -64,30 +96,12 @@ while True:
     else:
         print("Error. Please use 1 for Wikipedia and 2 for words_dictionary.json")
 
-    unique_picture = {}
-    unique_picture_for_one_word = []
-    random_pictures = []
+    with concurrent.futures.ThreadPoolExecutor(max_workers=use_threads) as executor:
+        with tqdm(total=len(word_list), desc="Running", unit="word", mininterval=0.1) as pbar:
+            futures = {executor.submit(process_word, word): word for word in word_list}
 
-    if word_list:
-        for word in tqdm(word_list, "Running"):
-            base_url = "https://r.sine.com/"
-            url = f"{base_url}{word}"
-
-            clean_word = re.sub(r'\([^)]*\)', '', word).strip()
-
-            content1 = get_page_content(url)
-
-            if content1 == '':
-                random_pictures.append(clean_word)
-            elif content1 in unique_picture:
-                unique_picture[content1].append(clean_word)
-            else:
-                content2 = get_page_content(url)
-
-                if content1 == content2:
-                    unique_picture[content1] = unique_picture.get(content1, []) + [clean_word]
-                else:
-                    random_pictures.append(clean_word)
+            for future in concurrent.futures.as_completed(futures):
+                pbar.update(1)
 
     if unique_picture or random_pictures:
         if unique_picture:
