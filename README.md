@@ -49,12 +49,12 @@ I don't know why this one don't works to display the image<img style = "width: 1
 
 - **Cond3**: 
   - single image for one word → ```unique_pictures.txt``` (e.g. https://r.sine.com/admin)
-  <img style = "width: 100%; height: 100%;" src="https://r.sine.com/admin"/>
+    <img style = "width: 100%; height: 100%;" src="https://r.sine.com/admin"/>
   - single image for 2 or more words → ```unique_pictures_2words.txt``` (e.g. https://r.sine.com/bird and https://r.sine.com/parrot)
   
-| https://r.sine.com/bird                                                   | https://r.sine.com/parrot                                                   |
-|---------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| <img style = "width: 100%; height: 100%;" src="https://r.sine.com/bird"/> | <img style = "width: 100%; height: 100%;" src="https://r.sine.com/parrot"/> |
+    | https://r.sine.com/bird                                                   | https://r.sine.com/parrot                                                   |
+    |---------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+    | <img style = "width: 100%; height: 100%;" src="https://r.sine.com/bird"/> | <img style = "width: 100%; height: 100%;" src="https://r.sine.com/parrot"/> |
   
 
 ## What is ```r``` file ?
