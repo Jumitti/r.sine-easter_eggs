@@ -19,7 +19,7 @@ that some words link to the same photo (**Cond2**) and that some words are only 
 
 - **Cond1**: random image → ```random_pictures.txt```
 - **Cond2**: buffer image used for several words → ```same_pictures.txt```
-- **Cond3**: single image for one word → ```unique_pictures.txt```
+- **Cond3**: single image for one word → ```unique_pictures.txt``` | single image for 2 or more words → ```unique_pictures_2words.txt```
 
 So basically, we make requests for each word in the dictionary !
 For this, I use either [Wikipedia's word frequency lists](https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/PG/2006/04/1-10000) 
