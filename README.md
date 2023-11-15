@@ -44,7 +44,7 @@ Lists are in ```output``` folder
 
 
 - **Cond2**: buffer image used for several words → ```same_pictures.txt``` (e.g. https://r.sine.com/nicetry)
-I don't know why this one don't works to display the image<img style = "width: 100%; height: 100%;" src="https://r.sine.com/nicetry"/>
+I don't know why this one don't works to display the image <img style = "width: 100%; height: 100%;" src="https://r.sine.com/nicetry"/>
 
 
 - **Cond3**: 
@@ -57,13 +57,41 @@ I don't know why this one don't works to display the image<img style = "width: 1
     | <img style = "width: 100%; height: 100%;" src="https://r.sine.com/bird"/> | <img style = "width: 100%; height: 100%;" src="https://r.sine.com/parrot"/> |
   
 
-## What is ```r``` file ?
+## Special words
 
-Looking for random words, I found https://r.sine.com/r. I don't know if it's a bug or if it's intentional, 
-but it's not an image. It's a piece of code that helps us understand how images are returned to us on https://r.sine.com/index.
+In the ```special_words``` folder, you will find all the words leading to unique outputs (**Cond3**) but which are not images. txt files is the source code I've scrapped.
 
-To my knowledge, this is the only piece of code I've been able to find from r.sine.
+### ```chicken```
 
+A scientific chicken article in PDF format. Thank you r.sine.com 😅
+
+### ```content``` ```farmer```
+
+Requires further code analysis... Probably a redirect to music albums on Amazon
+
+### ```drinking```
+
+It's a comic strip on a white background. The white background and the way the GIF is generated is quite atypical.
+
+### ```heaven```
+
+Requires further code analysis...
+
+### ```lamppost``` ```ready``` ```smart```
+
+Probably old images that no longer work.
+
+### ```monitors``` ```robots```
+
+A mystery... I have no idea about it
+
+### ```r```
+
+I don't know if it's a bug or if it's intentional, but it's not an image. It's a piece of code that helps us understand how images are returned to us on https://r.sine.com/index.
+
+### ```topmen```
+
+Leads to https://www.youtube.com/watch?v=yoy4_h7Pb3M
 
 ## Disclaimer
 

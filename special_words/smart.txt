@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>smart.jpg (image)</title>
+        <script type="text/javascript">
+            <!--
+            if (top.location != self.location) top.location = self.location;
+            // -->
+        </script>
+    </head>
+    <body bgcolor="#ffffff" text="#000000">
+        <img src="http://bp0.blogger.com/_a7jkcMVp5Vg/Ru1T2zoehqI/AAAAAAAAB0U/sPu5NnUHw3M/s1600/smart.jpg" alt="[smart.jpg]" border=0>
+    </body>
+</html>

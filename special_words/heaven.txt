@@ -1,0 +1,415 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ow.ly - image uploaded by @RachelSterne </title>
+	<meta name="keywords" content="Ow.ly, Shorten urls, share files, track visits, twitter file sharing, twitter image sharing, tweet comments" />
+			<meta name="description" content="View and share this image from @RachelSterne  and hosted by Ow.ly" />
+							<link href="http://static.ow.ly/4-9-19/css/owly.css" type="text/css" rel="stylesheet" />
+				<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" href="http://static.ow.ly/4-9-19/css/ie6.css" />
+	<![endif]-->
+
+	<script type="text/javascript">
+	var owly = new Object();
+	owly.c = new Object();
+	owly.c.rootUrl = "http://ow.ly";
+	owly.c.photoRootUrl = "http://static.ow.ly/photos";
+	owly.c.swfUrl = "http://static.ow.ly/4-9-19/swf";
+</script>
+
+			<script type="text/javascript" src="http://static.ow.ly/4-9-19/js/owly.js"></script>
+
+	<link rel="shortcut icon" href="http://static.ow.ly/4-9-19/images/favicon.ico" />
+	<link rel="apple-touch-icon" href="http://static.ow.ly/4-9-19/images/apple-touch-icon.png"/>
+</head>
+
+
+<body>
+<div id="statusContainer" style="display: none;">
+	<div class="y-n">
+    	<span class="cn-3">
+            <span class="tl"><!--  --></span>
+            <span class="tc"><!--  --></span>
+            <span class="tr"><!--  --></span>
+            <span class="ml"><!--  --></span>
+            <span class="mr"><!--  --></span>
+            <span class="bl"><!--  --></span>
+            <span class="bc"><!--  --></span>
+            <span class="br"><!--  --></span>
+        </span>
+        <span class="_statusMsgContent"></span>
+    </div>
+</div>
+
+<div id="wrapper">
+	<div id="header">
+		<h1 class="logo"><a href="http://ow.ly">Owly</a></h1>
+		<div id="globalNav">
+        								<a href="#" id="btnLogin"><span class="hidden">Sign in with Twitter</span></a>
+				<input type="hidden" id="loggedIn" value="0" />
+				<input type="hidden" id="loggedInTwitterAccountId" value="-1" />
+					</div>
+	</div>
+
+	<div id="page">
+		<div id="primary">
+											<div class="box mediaBox last">
+			<div id="bar">
+	<div id="tools">
+	<!--<img src="http://static.ow.ly/4-9-19/images/load.gif" id="throbber" />-->
+		<span class="_actionbarComment">
+			<a href="#comments" class="_localScroll icon-plus comments">
+			<span class="icon-19"></span><strong>Comments</strong></a> (<span class="_actionbarCommentCount">...</span>)
+		</span>
+		<span class="spc"></span>
+		<a class="icon-plus tweet" href="#" onclick="expandBar('photo', 'panel-retweet',291); return false;">
+			<span class="icon-19"></span><strong>Tweet</strong>
+		</a>
+		<span class="spc"></span>
+		<a class="icon-plus share" href="#" title="Bookmark and Share" onclick="expandBar('photo', 'panel-share',291); return false;">
+			<span class="icon-19"></span><strong>Share</strong>
+		</a>
+		<span class="spc"></span>
+		<span class="rate"><a class="icon rateUp" href="#" onclick="fileScoreClick('photo', '2840987', 'up');return false;"><span class="icon-19"></span></a><a class="icon rateDown" href="#" onclick="fileScoreClick('photo', '2840987', 'down');return false;"><span class="icon-19"></span></a>
+			<strong>Rate </strong><span class="score" id="fileScoreRatingNumber">(<em>+1</em>)</span>
+		</span>
+							<span class="spc"></span>
+				<!-- View Original is Photo only -->
+				<a class="icon-plus magnify" href="http://ow.ly/i/bV4n/original" title="View Original Size"><span class="icon-19"></span><strong>Original Size</strong></a>
+				</div>
+</div>
+
+<input id="shortUrl" type="hidden" value="http://ow.ly/i/bV4n" />
+<input id="hash" type="hidden" value="bV4n" />
+<input id="defaultContent" type="hidden" value="RT @RachelSterne: Photo on 2011-05-22 at 12:55.jpg http://ow.ly/i/bV4n" />
+<input id="username" type="hidden" value="RachelSterne" />
+
+<div id="panels"></div>
+
+<script src="http://cdn.gigya.com/wildfire/js/wfapiv2.js"></script>        <div class="imageWrapper">
+        	<a href="http://ow.ly/i/bV4n/original" title="View original size">
+            <img src="http://static.ow.ly/photos/normal/bV4n.jpg" alt="Photo on 2011-05-22 at 12:55.jpg" />
+            </a>
+        </div>
+        <div class="caption _tweetContent">
+						        </div>
+    </div>
+<div class="mediaCredit">
+    <span class="icon arrow-down"><span class="icon-19"></span></span>
+	<a class="icon-plus flag _flagPhoto" href="#flagPhoto">&nbsp;<span class="icon-12"></span>Report Abuse</a>
+    <div class="avatar-48">
+    	<a class="border" href="http://ow.ly/user/RachelSterne" title="RachelSterne">
+        	<img src="http://a3.twimg.com/profile_images/202261151/rachel_businessweeksmall_normal.jpg" onerror="doAvatarSearch(this, 'RachelSterne')" alt="RachelSterne" />
+        </a>
+    </div>
+    <h3 class="username"><a href="http://ow.ly/user/RachelSterne" title="RachelSterne">RachelSterne</a></h3>
+    <h4 class="postdate">Posted about 13 hours ago</h4>
+
+    </div>
+
+		<div class="listWrapper">
+	<a name="comments"></a>
+	<div class="listTabs">
+		<div class="tab active">
+			<a href="#">Comments (<span class="_commentTabCount">...</span>)</a>
+		</div>
+			</div>
+
+	<div class="listBoxes">
+		<div id="_comments" class="listBox box">
+						<div class="item">
+
+													<div class="avatar-48">
+						<a class="border">
+							<img src="../images/avatar_icon.jpg" alt="Default Avatar" />
+						</a>
+					</div>
+					<input type="button" id="btnLoginComment" value="Login to Comment" style="display:none" />
+								<div class="comment new-comment">
+					<span class="arrow-left"><span class="icon-19"></span></span>
+					<div class="message">
+						<form id="formComment" class="retweet _commentForm" action="" method="get" target="_blank" onsubmit="return submitComment();">
+							<strong>Tweet a comment:</strong> <span class="disclaimer">(Note: This will post to your Twitter account as a reply to @RachelSterne)</span>
+							<div class="txa c-u" onclick="$('._commentForm #commentContent').focus(); $(this).addClass('focus');">
+								@RachelSterne&#0133								<textarea name="comment[content]" id="commentContent" onblur="$('._commentForm .txa').removeClass('focus');"></textarea>
+								&#0133http://ow.ly/i/bV4n
+							</div>
+
+							<div id="commentUploadSwf" class="_commentUploader">
+
+								<a href="#" class="_signInToUpload"><strong>Sign in</strong></a>  to attach an image or document to your comment
+
+							</div>
+							<span id="retweet-error"></span>
+							<input type="hidden" name="comment[modelType]" value="photo" />
+							<input type="hidden" name="comment[modelId]" value="2840987" />
+							<input type="hidden" name="comment[modelTwitterAccountId]" value="373745" />
+							<input type="hidden" name="comment[modelUsername]" value="RachelSterne" />
+							<input type="hidden" name="comment[modelAvatar]" value="http://a3.twimg.com/profile_images/202261151/rachel_businessweeksmall_normal.jpg" />
+							<input type="hidden" name="comment[modelTweetId]" value="" />
+							<input type="hidden" name="comment[replyModelType]" />
+							<input type="hidden" name="comment[replyModelId]" />
+							<input type="hidden" name="comment[replyItemInfo]" />
+							<input type="hidden" name="comment[modelItemInfo]" value='http://static.ow.ly/photos/thumb/bV4n.jpg' />
+							<div class="sbt">
+								<input type="submit" value="Send Tweet" />
+							</div>
+							<div class="clear"></div>
+						</form>
+					</div>
+				</div>
+		</div>
+
+		<div class="_commentList">
+			Loading comments...<img src="../images/load.gif" alt="loading" />
+		</div>
+		<a name="latestcomment"></a>
+	</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		if ($("._signInToUpload").size() > 0) {
+			$("._signInToUpload").click(function(e){
+				$("#btnLogin").click();
+				e.preventDefault();
+			});
+		}
+		getComments();
+	});
+</script>
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("a._flagPhoto").bind("click", function(event) {
+			flagFile('photo', 2840987, this);
+			event.preventDefault();
+		});
+
+					/*
+			var searchTerm = "http://ow.ly/i/bV4n";
+			var hash = searchTerm.substring(searchTerm.lastIndexOf("/")+1);
+			getTweetContentBySearch('RachelSterne', owly.c.rootUrl +'/i ' + hash, true, $("._tweetContent"), 'Photo on 2011-05-22 at 12:55.jpg');
+			*/
+			searchOriginalTweet('photo', '2840987', $("._tweetContent"), 'Photo on 2011-05-22 at 12:55.jpg');
+
+
+		$('.imageWrapper').bind("contextmenu",function(e){
+			return false;
+		});
+
+	});
+
+
+</script>		</div>
+		<!-- only show sidebar if not viewing original size -->
+					<div id="secondary">
+				<div class="adbox">
+
+																											<a href="http://hootsuite.com/social-share?ad=ow&utm_source=owly&utm_medium=banner&utm_content=owlypro&utm_campaign=social-share" target="_blank" onclick="owly.trackEvent({category: 'BannerClick', action: 'click_socialshare_ad'});"><img src="http://static.ow.ly/4-9-19/images/ads/socialshare_ad.jpg" /></a>
+
+					<!--<script>
+						var ve_publisher = "Owly";
+						var ve_site = "OW_LY";
+						var ve_area = "OW_LY";
+						var ve_location = "OW_LY_PHOTO_300X250";
+						var ve_placement = "OTHER_photo";
+						var ve_width = 300;
+						var ve_height = 250;
+						var ve_alternate = "";
+						document.write("<script src='http://core.videoegg.com/eap/html/js/init.js?"+Math.random()+"'></sc"+"ript>");
+					</script>
+
+				--></div>
+									<!-- embed info -->
+					<div id="embed">
+						<div class="box">
+							<div class="innerBorder">
+							<label class="title"><strong>Direct Link:</strong></label>
+								<div class="ipt">
+								<input type="text" onclick="this.focus(); this.select();" value="http://ow.ly/i/bV4n" />
+								</div>
+							</div>
+						</div>
+						<div class="listWrapper">
+															<div class="listTabs">
+									<div class="tab active">
+										<a href="#" rel="_smallThumb">Thumbnail</a>
+									</div>
+									<div class="tab">
+										<a href="#" rel="_fullThumb">Full Image</a>
+									</div>
+								</div>
+								<div class="listBoxes">
+									<div id="_smallThumb" class="listBox box">
+
+										<div class="innerBorder">
+											<div class="ipt">
+												<input type="text" onclick="this.focus(); this.select();" value='<a href="http://ow.ly/i/bV4n" target="_blank"><img src="http://static.ow.ly/photos/thumb/bV4n.jpg" alt="Owly Images" /></a>' />
+											</div>
+										</div>
+
+									</div>
+									<div id="_fullThumb" class="listBox box" style="display: none;">
+
+										<div class="innerBorder">
+											<div class="ipt">
+												<input type="text" onclick="this.focus(); this.select();" value='<a href="http://ow.ly/i/bV4n" target="_blank"><img src="http://static.ow.ly/photos/normal/bV4n.jpg" alt="Owly Images" /></a>' />
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+
+						</div>
+					</div>
+					<!-- photo info -->
+											<!-- no photo info -->
+										<!-- more-by-this-user info -->
+											<div class="thumbs box">
+						<div class="innerBorder">
+							<p class="title">
+								<a class="more" href="http://ow.ly/user/RachelSterne"><strong>See All &raquo;</strong></a>
+								<strong>More photos from RachelSterne</strong>
+							</p>
+														<div class="thumb-77">
+								<a class="border" href="http://ow.ly/i/aYnu" title="Photo on 2011-04-30 at 12:33.jpg">
+																			<img src="http://static.ow.ly/photos/thumb/aYnu.jpg" alt="Photo on 2011-04-30 at 12:33.jpg" />
+																	</a>
+							</div>
+														<div class="thumb-77">
+								<a class="border" href="http://ow.ly/i/aYfr" title="Photo on 2011-04-30 at 11:42.jpg">
+																			<img src="http://static.ow.ly/photos/thumb/aYfr.jpg" alt="Photo on 2011-04-30 at 11:42.jpg" />
+																	</a>
+							</div>
+														<div class="thumb-77">
+								<a class="border" href="http://ow.ly/i/9Nbr" title="Photo on 2011-03-31 at 20:05.jpg">
+																			<img src="http://static.ow.ly/photos/thumb/9Nbr.jpg" alt="Photo on 2011-03-31 at 20:05.jpg" />
+																	</a>
+							</div>
+													</div>
+						</div>
+													<div style="margin-bottom:10px;">
+					<a href="http://hootsuite.com" target="_blank"><img src="http://static.ow.ly/4-9-19/images/hootsuite_promo.jpg" alt="HootSuite" title="HootSuite" /></a>
+				</div>
+				<div class="advertisment last">
+					<!--  VideoEgg tag --><!--
+					<script>
+						var ve_publisher = "Owly";
+						var ve_site = "OW_LY";
+						var ve_area = "OW_LY";
+						var ve_location = "OW_LY_PICTURE_300X600";
+						var ve_placement = "OTHER_picture";
+						var ve_width = 300;
+						var ve_height = 600;
+						var ve_alternate = "collapse";
+						document.write("<script src='http://core.videoegg.com/eap/html/js/init.js?"+Math.random()+"'></sc"+"ript>");
+					</script>
+					--><!-- end VideoEgg tag -->
+				</div>
+			</div>
+			</div>
+
+	<div id="footer">
+		&copy; 2009 ow.ly - <a href="http://ow.ly/terms">Terms of Service</a> | <a class="fdbk" target="_blank" href="http://getsatisfaction.com/hootsuite/products/hootsuite_owly">Feedback</a>
+	</div>
+
+	<div id="userMessage">
+	</div>
+
+</div>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        // convert all relative dates
+        $("._relativeDate").each(function() {
+            this.innerHTML = getRelativeTime(this.innerHTML);
+            $(this).css("visibility", "visible");
+        });
+
+        // bind url "copy to clipboard" textboxes
+        $("input._copyUrl").bind("click", function() {
+			this.focus();
+            this.select();
+        });
+
+        // bind all local scroll links
+        $("._localScroll").live("click", function(e) {
+            var href = $(this).attr("href");
+            var name = href.substring(href.indexOf("#")+1);
+        	scrollToAnchor(name);
+        	e.preventDefault();
+        });
+
+
+        	        // popauth
+	        var p = new popauth("twitter", '/ajax/twitter/get-auth-url', function(e, ot, ov) {
+		        $.getJSON('/ajax/twitter/get-access-token?ot='+ot+'&ov='+ov, function(data) {
+					if (data.success) {
+						setTimeout(function(){ window.location = window.location; }, 0.1);	// refresh
+					} else {
+						displayUserMessage("Login failed, please try again");
+					}
+		        });
+			});
+			// bind button
+			$("#btnLogin").bind("click", function(e) {
+				e.preventDefault();
+				p.start();	// start auth
+			});
+
+
+        $('.listTabs .tab a').click(function(e) {
+            if (!$(this).closest('.listTabs').hasClass('_nonAjax')) {
+				if($(this).attr('rel') && $('#'+$(this).attr('rel')).length) {
+				$(this).closest('.listTabs').find('.active').removeClass('active');
+				$(this).parent().addClass('active');
+				$(this).closest('.listWrapper').find('.listBoxes .listBox').hide();
+					var target = $(this).attr('rel');
+					$('#'+target).show();
+				}
+				e.preventDefault();
+            }
+		});
+
+		$.preloadImages = function() {
+			for (var i = 0; i<arguments.length; i++) {
+				img = new Image();
+				img.src = arguments[i];
+			}
+		}
+		$.preloadImages(
+			'http://static.ow.ly/4-9-19/images/new/maps/map-12-hover.png',
+			'http://static.ow.ly/4-9-19/images/new/maps/map-12-active.png',
+			'http://static.ow.ly/4-9-19/images/new/maps/map-19-hover.png',
+			'http://static.ow.ly/4-9-19/images/new/maps/map-19-active.png',
+			'http://static.ow.ly/4-9-19/images/new/maps/map-73-hover.png',
+			'http://static.ow.ly/4-9-19/images/new/maps/map-73-active.png'
+		);
+    });
+</script>
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-51223-22']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+	<script type="text/javascript">
+		try {
+			var pageTracker = _gat._getTracker("UA-51223-22");
+			pageTracker._trackPageview();
+		} catch(err) {}
+	</script>
+</body>
+</html>
