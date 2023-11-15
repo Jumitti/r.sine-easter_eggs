@@ -1,5 +1,5 @@
 # r.sine Easter Eggs Finder
-<img style = "width: 100%; height: 100%;" src="https://r.sine.com/wellplayed"/>
+<img style = "width: 100%; height: 100%;" src="https://r.sine.com/wellplayed" alt=""/>
 
 ## Description
 [r.sine](https://r.sine.com/index) is a website that displays a random image or gif each time the page is refreshed. 
@@ -10,7 +10,7 @@ Either the word displays random images (e.g. https://r.sine.com/index ), or the 
 probably when the word is not addressed to an image. I decided to use a script to discover all the possible words to use.
 Yes, it's stupid. Welcome to the internet.
 
-<img style = "width: 100%; height: 100%;" src="https://r.sine.com/www"/>
+<img style = "width: 100%; height: 100%;" src="https://r.sine.com/www" alt=""/>
 
 ## How it works
 
@@ -47,8 +47,15 @@ Lists are in ```output``` folder
 I don't know why this one don't works to display the image<img style = "width: 100%; height: 100%;" src="https://r.sine.com/nicetry"/>
 
 
-- **Cond3**: single image for one word → ```unique_pictures.txt``` (e.g. https://r.sine.com/admin)
-<img style = "width: 100%; height: 100%;" src="https://r.sine.com/admin"/>
+- **Cond3**: 
+  - single image for one word → ```unique_pictures.txt``` (e.g. https://r.sine.com/admin)
+  <img style = "width: 100%; height: 100%;" src="https://r.sine.com/admin"/>
+  - single image for 2 or more words → ```unique_pictures_2words.txt``` (e.g. https://r.sine.com/bird and https://r.sine.com/parrot)
+  
+| https://r.sine.com/bird                                                   | https://r.sine.com/parrot                                                   |
+|---------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| <img style = "width: 100%; height: 100%;" src="https://r.sine.com/bird"/> | <img style = "width: 100%; height: 100%;" src="https://r.sine.com/parrot"/> |
+  
 
 ## What is ```r``` file ?
 
