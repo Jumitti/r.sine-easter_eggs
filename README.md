@@ -73,7 +73,7 @@ Music group promotion web pages ?
 
 ### ```drinking```
 
-It's a comic strip on a white background. The white background and the way the GIF is generated is quite atypical.
+It's a comic strip on a white background. The white background and the way the GIF is generated are quite atypical.
 
 ### ```heaven```
 
