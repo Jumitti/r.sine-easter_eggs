@@ -36,6 +36,11 @@ If not, the word leads to a unique image (**Cond3**).
 
 After that, I made the script to limit the number of requests, but that's a technicality that no one cares about.
 
+## How to test word
+
+Just replace ```index``` from https://r.sine.com/index with an other word (e.g. ```advice```) → https://r.sine.com/advice
+<img style = "width: 100%; height: 100%;" src="https://r.sine.com/advice"/>
+
 ## Sorted words and examples
 
 Lists are in ```output``` folder
@@ -55,7 +60,18 @@ I don't know why this one don't works to display the image <img style = "width: 
     | https://r.sine.com/bird                                                   | https://r.sine.com/parrot                                                   |
     |---------------------------------------------------------------------------|-----------------------------------------------------------------------------|
     | <img style = "width: 100%; height: 100%;" src="https://r.sine.com/bird"/> | <img style = "width: 100%; height: 100%;" src="https://r.sine.com/parrot"/> |
-  
+
+### Statistics
+
+370101 words tested:
+- 1 word does random pictures → index
+- 1531 words lead to a unique things:
+  - 1455 words do a unique images 
+  - 29 images accessible via 2 words (58 words)
+  - 2 images accessible via 3 words (6 words)
+  - 11 words are specials... web page, redirection to youtube, snippet of r.sine code, pdf, broken images (repaired in html), mysteries
+
+
 
 ## Special words
 
@@ -94,6 +110,10 @@ I don't know if it's a bug or if it's intentional. It's a piece of code that hel
 ### ```topmen```
 
 Leads to https://www.youtube.com/watch?v=yoy4_h7Pb3M (html broken)
+
+## Is it done ?
+
+I don't know. I stupidly sifted words. And I know that certain words are not there (example: www; I still added it in the output). There are probably still plenty of words and ester eggs. If you know words that I didn't find, put them in [Issues](https://github.com/Jumitti/r.sine-easter_eggs/issues) or on [Reddit post](https://www.reddit.com/r/rsine/comments/17t51o6/rsine_easter_eggs/).
 
 ## Disclaimer
 
