@@ -59,7 +59,9 @@ I don't know why this one don't works to display the image <img style = "width: 
 
 ## Special words
 
-In the ```special_words``` folder, you will find all the words leading to unique outputs (**Cond3**) but which are not images. txt files is the source code I've scrapped.
+In the ```special_words``` folder, you will find all the words leading to unique outputs (**Cond3**) but which are not images.
+
+Some words are internet pages. They are no longer executable on r.sine.com but you can open them by downloading the html and opening them with a browser.
 
 ### ```chicken```
 
@@ -67,7 +69,7 @@ A scientific chicken article in PDF format. Thank you r.sine.com 😅
 
 ### ```content``` ```farmer```
 
-Requires further code analysis... Probably a redirect to music albums on Amazon
+Music group promotion web pages ?
 
 ### ```drinking```
 
@@ -75,11 +77,11 @@ It's a comic strip on a white background. The white background and the way the G
 
 ### ```heaven```
 
-Requires further code analysis...
+Web page to comment anonymously on photos of Rachel Sterne Twitter ?
 
 ### ```lamppost``` ```ready``` ```smart```
 
-Probably old images that no longer work.
+Images that no longer work on r.sine.com. HTML work.
 
 ### ```monitors``` ```robots```
 
@@ -87,11 +89,11 @@ A mystery... I have no idea about it
 
 ### ```r```
 
-I don't know if it's a bug or if it's intentional, but it's not an image. It's a piece of code that helps us understand how images are returned to us on https://r.sine.com/index.
+I don't know if it's a bug or if it's intentional. It's a piece of code that helps us understand how images are returned to us on https://r.sine.com/index.
 
 ### ```topmen```
 
-Leads to https://www.youtube.com/watch?v=yoy4_h7Pb3M
+Leads to https://www.youtube.com/watch?v=yoy4_h7Pb3M (html broken)
 
 ## Disclaimer
 
