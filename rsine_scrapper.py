@@ -38,23 +38,25 @@ def get_page_content(url):
 
 def process_word(word):
     base_url = "https://r.sine.com/"
+
+    # All CAPS
     url = f"{base_url}{word}"
 
-    clean_word = re.sub(r'\([^)]*\)', '', word).strip()
+    word = re.sub(r'\([^)]*\)', '', word).strip()
 
-    content1 = get_page_content(url)
+    content = get_page_content(url)
 
-    if content1 == '':
-        random_pictures.append(clean_word)
-    elif content1 in unique_picture:
-        unique_picture[content1].append(clean_word)
+    if content == '':
+        random_pictures.append(word)
+    elif content in unique_picture:
+        unique_picture[content].append(word)
     else:
-        content2 = get_page_content(url)
+        content_2 = get_page_content(url)
 
-        if content1 == content2:
-            unique_picture[content1] = unique_picture.get(content1, []) + [clean_word]
+        if content == content_2:
+            unique_picture[content] = unique_picture.get(content, []) + [word]
         else:
-            random_pictures.append(clean_word)
+            random_pictures.append(word)
 
 
 while True:
@@ -67,7 +69,7 @@ while True:
     use_threads = num_threads - 2
     print(f"{use_threads} threads used for the script.")
 
-    list_of_words = input("Use Wikipedia (1) or words_dictionary.json (2) ? ")
+    list_of_words = input("Use Wikipedia (1) or words.json (2) ? ")
 
     if list_of_words == '1':
         print("Wikipedia selected")
@@ -80,49 +82,56 @@ while True:
             print('Wrong input. Choose All (a) or a number between 1-10000)')
 
     elif list_of_words == '2':
-        print("words_dictionary.json selected")
-        number_of_words = input("All (a) or a number (type a number between 1-370101)")
+        print("words.json selected")
+        number_of_words = input("All (a) or a number (type a number between 1-1000316)")
 
-        with open('words_dictionary.json', 'r') as file:
+        with open('words.json', 'r') as file:
             data = json.load(file)
 
         if number_of_words == "a":
-            word_list = list(data.keys())
-        elif 1 <= int(number_of_words) <= 370101:
-            word_list = random.sample(list(data.keys()), int(number_of_words))
+            word_list_upper = [word.upper() for word in list(data.keys())]
+            word_list_lower = [word.lower() for word in list(data.keys())]
+            word_list = word_list_upper + word_list_lower
+        elif 1 <= int(number_of_words) <= 1000316:
+            print("Note 1: words analyzed are multiplied by 2 because UPPER and lower words are tested")
+            print("Note 2: random words are chosen for UPPER and lower words.")
+            word_list_upper = [word.upper() for word in random.sample(list(data.keys()), int(number_of_words))]
+            word_list_lower = [word.lower() for word in random.sample(list(data.keys()), int(number_of_words))]
+            word_list = word_list_upper + word_list_lower
         else:
-            print('Wrong input. Choose All (a) or a number between 1-370101)')
+            print('Wrong input. Choose All (a) or a number between 1-1000316)')
 
     else:
-        print("Error. Please use 1 for Wikipedia and 2 for words_dictionary.json")
+        print("Error. Please use 1 for Wikipedia and 2 for words.json")
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=use_threads) as executor:
-        with tqdm(total=len(word_list), desc="Running", unit="word", mininterval=0.1) as pbar:
-            futures = {executor.submit(process_word, word): word for word in word_list}
+    if word_list:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=use_threads) as executor:
+            with tqdm(total=len(word_list), desc="Running", unit="word", mininterval=0.1) as pbar:
+                futures = {executor.submit(process_word, word): word for word in word_list}
 
-            for future in concurrent.futures.as_completed(futures):
-                pbar.update(1)
+                for future in concurrent.futures.as_completed(futures):
+                    pbar.update(1)
 
-    if unique_picture or random_pictures:
-        if unique_picture:
-            with open("output/unique_pictures.txt", "w") as file:
-                print("Create unique_pictures.txt")
-                for content, words in unique_picture.items():
-                    if len(words) == 1:
-                        unique_picture_for_one_word.append(words[0])
-                        file.write(f"{words[0]}\n")
+        if unique_picture or random_pictures:
+            if unique_picture:
+                with open("output_v2/unique_pictures.txt", "w") as file:
+                    print("Create unique_pictures.txt")
+                    for content, words in unique_picture.items():
+                        if len(words) == 1:
+                            unique_picture_for_one_word.append(words[0])
+                            file.write(f"{words[0]}\n")
 
-            with open("output/same_picture.txt", "w") as file:
-                print("Create same_picture.txt")
-                for content, words in unique_picture.items():
-                    if len(words) > 1:
-                        for word in words:
-                            file.write(f"{word}\n")
+                with open("output_v2/same_picture.txt", "w") as file:
+                    print("Create same_picture.txt")
+                    for content, words in unique_picture.items():
+                        if len(words) > 1:
+                            for word in words:
+                                file.write(f"{word}\n")
 
-        if random_pictures:
-            with open("output/random_pictures.txt", "w") as file:
-                print("Create random_pictures.txt")
-                for word in random_pictures:
-                    file.write(f"{word}\n")
+            if random_pictures:
+                with open("output_v2/random_pictures.txt", "w") as file:
+                    print("Create random_pictures.txt")
+                    for word in random_pictures:
+                        file.write(f"{word}\n")
 
-        break
+            break
