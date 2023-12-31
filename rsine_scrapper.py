@@ -66,7 +66,7 @@ while True:
     random_pictures = []
 
     num_threads = os.cpu_count()
-    use_threads = num_threads - 2
+    use_threads = num_threads
     print(f"{use_threads} threads used for the script.")
 
     list_of_words = input("Use Wikipedia (1) or words.json (2) ? ")
