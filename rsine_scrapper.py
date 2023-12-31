@@ -83,7 +83,7 @@ while True:
 
     elif list_of_words == '2':
         print("words.json selected")
-        number_of_words = input("All (a) or a number (type a number between 1-1000316)")
+        number_of_words = input("All (a) or a number (type a number between 1-500159)")
 
         with open('words.json', 'r') as file:
             data = json.load(file)
@@ -92,14 +92,14 @@ while True:
             word_list_upper = [word.upper() for word in list(data.keys())]
             word_list_lower = [word.lower() for word in list(data.keys())]
             word_list = word_list_upper + word_list_lower
-        elif 1 <= int(number_of_words) <= 1000316:
+        elif 1 <= int(number_of_words) <= 500159:
             print("Note 1: words analyzed are multiplied by 2 because UPPER and lower words are tested")
             print("Note 2: random words are chosen for UPPER and lower words.")
             word_list_upper = [word.upper() for word in random.sample(list(data.keys()), int(number_of_words))]
             word_list_lower = [word.lower() for word in random.sample(list(data.keys()), int(number_of_words))]
             word_list = word_list_upper + word_list_lower
         else:
-            print('Wrong input. Choose All (a) or a number between 1-1000316)')
+            print('Wrong input. Choose All (a) or a number between 1-500159)')
 
     else:
         print("Error. Please use 1 for Wikipedia and 2 for words.json")
