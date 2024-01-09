@@ -120,3 +120,5 @@ I don't know. I stupidly sifted words. And I know that certain words are not the
 The images on r.sine.com may offend the sensibilities of users. If you do not have the majority (of your country), 
 I disclaim all responsibility for what you find on this site. This GitHub project is just a curiosity about another 
 Internet curiosity.
+
+<img style = "width: 100%; height: 100%;" src="https://r.sine.com/kamikaze"/> 
