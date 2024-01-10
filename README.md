@@ -83,7 +83,7 @@ I don't know why this one don't works to display the image <img style = "width: 
 
 ## [Special words folder](special_words)
 
-In the ```special_words``` folder, you will find all the words leading to unique outputs (**Cond3**).
+In the [```special_words```](special_words) folder, you will find all the words leading to unique outputs (**Cond3**).
 
 💡 *Hint: you can click on the titles and names to directly access them*
 
@@ -95,43 +95,43 @@ In the ```special_words``` folder, you will find all the words leading to unique
 
 Some words are internet pages. They are no longer executable on r.sine.com but I host them so that you have access to them. 
 
-### [```chicken```](https://r.sine.com/chicken)
+#### [```chicken```](https://r.sine.com/chicken)
 
 A scientific chicken article in PDF format. Thank you r.sine.com 😅
 
-### [```content```](https://content-rsine.netlify.app) [```farmer```](https://farmer-rsine.netlify.app)
+#### [```content```](https://content-rsine.netlify.app) [```farmer```](https://farmer-rsine.netlify.app)
 
 Music group promotion web pages ?
 
-### [```drinking```](https://r.sine.com/drinking)
+#### [```drinking```](https://r.sine.com/drinking)
 
 It's a comic strip on a white background. The white background and the way the GIF is generated are quite atypical.
 
-### [```heaven```](https://heaven-rsine.netlify.app)
+#### [```heaven```](https://heaven-rsine.netlify.app)
 
 Web page to comment on photos of Rachel Sterne Twitter ?
 
-### [```lamppost```](https://lamppost-rsine.netlify.app) [```ready```](https://ready-rsine.netlify.app) [```smart```](https://smart-rsine.netlify.app)
+#### [```lamppost```](https://lamppost-rsine.netlify.app) [```ready```](https://ready-rsine.netlify.app) [```smart```](https://smart-rsine.netlify.app)
 
 Images that no longer work on r.sine.com. HTML work.
 
-### [``music``](https://r.sine.com/music)
+#### [``music``](https://r.sine.com/music)
 
 A video of Peppa Pig 🐖
 
-### [```monitor```](https://r.sine.com/monitor) [```robots```](https://r.sine.com/robots) [```HISTORY```](https://r.sine.com/HISTORY)
+#### [```monitor```](https://r.sine.com/monitor) [```robots```](https://r.sine.com/robots) [```HISTORY```](https://r.sine.com/HISTORY)
 
 A mystery... I have no idea about it
 
-### [```r```](https://r.sine.com/r)
+#### [```r```](https://r.sine.com/r)
 
 I don't know if it's a bug or if it's intentional. It's a piece of code that helps us understand how images are returned to us on https://r.sine.com/index.
 
-### [``rathole``](https://r.sine.com/rathole)
+#### [``rathole``](https://r.sine.com/rathole)
 
 🎸 Rathooooolllleeeee... 🎵
 
-### [```topmen```](https://r.sine.com/topmen)
+#### [```topmen```](https://r.sine.com/topmen)
 
 Leads to https://www.youtube.com/watch?v=yoy4_h7Pb3M (html broken but works on https://r.sine.com/topmen)
 
