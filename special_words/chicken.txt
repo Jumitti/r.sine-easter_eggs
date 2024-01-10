@@ -1,5 +1,3 @@
-# Note: it's source code of chicken.pdf
-
 %PDF-1.3
 %����
 46 0 obj

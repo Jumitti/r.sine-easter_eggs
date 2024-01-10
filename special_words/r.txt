@@ -1,5 +1,3 @@
-# Note: how r.sine.com works ?
-
 #!/usr/bin/perl
 
 use strict;

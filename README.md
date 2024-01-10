@@ -93,7 +93,9 @@ In the [```special_words```](special_words) folder, you will find all the words 
 
 ### List of words that do not lead to images:
 
-Some words are internet pages. They are no longer executable on r.sine.com but I host them so that you have access to them. 
+*Note 1: some words are internet pages. They are no longer executable on r.sine.com but I host them (on Netlify) so that you have access to them.*
+
+*Note 2: since certain words do not lead to images, in the [```special_words```](special_words) folder you will find the source code given by the word in question (in html or txt or pdf version)*
 
 #### [```chicken```](https://r.sine.com/chicken)
 
