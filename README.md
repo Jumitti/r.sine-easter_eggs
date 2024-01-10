@@ -23,7 +23,13 @@ that some words link to the same photo (**Cond2**) and that some words are only 
 
 So basically, we make requests for each word in the dictionary !
 For this, I use either [Wikipedia's word frequency lists](https://en.wiktionary.org/wiki/Wiktionary:Frequency_lists/PG/2006/04/1-10000) 
-or ```words_dictionary.json``` from [english-words](https://github.com/dwyl/english-words).
+or [```words.txt```](https://github.com/dwyl/english-words/blob/master/words.txt) from [english-words GitHub Repo](https://github.com/dwyl/english-words).
+The word list I'm using has a problem... Those are only lowercase words. And certain words in lowercase do not give the same image as in uppercase so my script obviously tests both versions.
+
+| https://r.sine.com/science                                                   | https://r.sine.com/SCIENCE                                                   |
+|------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| <img style = "width: 100%; height: 100%;" src="https://r.sine.com/science"/> | <img style = "width: 100%; height: 100%;" src="https://r.sine.com/SCIENCE"/> |
+
 
 Then I make a first request for a specific word and retrieve the image source code. 
 I make a second request with the same word. If the 2 source codes are not similar, 
@@ -43,7 +49,9 @@ Just replace ```index``` from https://r.sine.com/index with an other word (e.g. 
 
 ## Sorted words and examples
 
-``output`` (and version) are the post-processing folders. Sometimes my script makes errors because it goes too fast for server responses I think. So I go through the word list several times to be sure. Here, I explain in more detail my reasoning and how I sorted.
+``output`` (and version) are the post-processing folders. Sometimes my script makes errors because it goes too fast for server responses I think. So I go through the word list several times to be sure and I have a ``False Discovery Rate (FDR)`` folder to test it.
+
+Here, I explain in more detail my reasoning and how I sorted.
 
 - **Cond1**: random image → ```random_pictures.txt``` (e.g. https://r.sine.com/index for legal reasons, I don't display random images)
 
@@ -63,13 +71,13 @@ I don't know why this one don't works to display the image <img style = "width: 
 
 ### Statistics
 
-370101 words tested:
+1000316 words tested:
 - 1 word does random pictures → index
-- 1531 words lead to a unique things:
-  - 1455 words do a unique images 
-  - 29 images accessible via 2 words (58 words)
+- 1716 words lead to a unique things:
+  - 1631 words do a unique images 
+  - 32 images accessible via 2 words (64 words)
   - 2 images accessible via 3 words (6 words)
-  - 11 words are specials... web page, redirection to youtube, snippet of r.sine code, pdf, broken images (repaired in html), mysteries
+  - 15 words are specials... web page, redirection to youtube, snippet of r.sine code, pdf, broken images (repaired in html), mysteries
 
 
 
