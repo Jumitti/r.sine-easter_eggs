@@ -74,8 +74,8 @@ I don't know why this one don't works to display the image <img style = "width: 
 1000316 words tested:
 - 1 word does random pictures → index
 - 1716 words lead to a unique things:
-  - 1631 words do a unique images 
-  - 32 images accessible via 2 words (64 words)
+  - 1629 words do a unique images 
+  - 33 images accessible via 2 words (66 words)
   - 2 images accessible via 3 words (6 words)
   - 15 words are specials... web page, redirection to youtube, snippet of r.sine code, pdf, broken images (repaired in html), mysteries
 
@@ -132,6 +132,10 @@ I don't know if it's a bug or if it's intentional. It's a piece of code that hel
 #### [``rathole``](https://r.sine.com/rathole)
 
 🎸 Rathooooolllleeeee... 🎵
+
+#### [``pong``](https://r.sine.com/pong)
+
+🏓
 
 #### [```topmen```](https://r.sine.com/topmen)
 
