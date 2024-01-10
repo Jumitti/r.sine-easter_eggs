@@ -22,7 +22,6 @@ def get_page_content(url):
 def process_word(word):
     base_url = "https://r.sine.com/"
 
-    # All CAPS
     url = f"{base_url}{word}"
 
     word = re.sub(r'\([^)]*\)', '', word).strip()
@@ -42,46 +41,43 @@ def process_word(word):
             random_pictures.append(word)
 
 
-while True:
-    unique_picture = {}
-    unique_picture_for_one_word = []
-    random_pictures = []
+unique_picture = {}
+unique_picture_for_one_word = []
+random_pictures = []
 
-    num_threads = os.cpu_count()
-    use_threads = num_threads
-    print(f"{use_threads} threads used for the script.")
+num_threads = os.cpu_count()
+use_threads = num_threads
+print(f"{use_threads} threads used for the script.")
 
-    with open("FDR.txt", 'r') as file:
-        print("FDR.txt selected")
-        word_list = file.read().split()
+with open("special_words/compilation_unique_pictures.txt", 'r') as file:
+    print("FDR.txt selected")
+    word_list = file.read().split()
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=use_threads) as executor:
-        with tqdm(total=len(word_list), desc="Running", unit="word", mininterval=0.1) as pbar:
-            futures = {executor.submit(process_word, word): word for word in word_list}
+with concurrent.futures.ThreadPoolExecutor(max_workers=use_threads) as executor:
+    with tqdm(total=len(word_list), desc="Running", unit="word", mininterval=0.1) as pbar:
+        futures = {executor.submit(process_word, word): word for word in word_list}
 
-            for future in concurrent.futures.as_completed(futures):
-                pbar.update(1)
+        for future in concurrent.futures.as_completed(futures):
+            pbar.update(1)
 
-    if unique_picture or random_pictures:
-        if unique_picture:
-            with open("FDR/FDR_unique_pictures.txt", "w") as file:
-                print("Create FDR_unique_pictures.txt")
-                for content, words in unique_picture.items():
-                    if len(words) == 1:
-                        unique_picture_for_one_word.append(words[0])
-                        file.write(f"{words[0]}\n")
+if unique_picture or random_pictures:
+    if unique_picture:
+        with open("FDR/FDR_unique_pictures.txt", "w") as file:
+            print("Create FDR_unique_pictures.txt")
+            for content, words in unique_picture.items():
+                if len(words) == 1:
+                    unique_picture_for_one_word.append(words[0])
+                    file.write(f"{words[0]}\n")
 
-            with open("FDR/FDR_same_picture.txt", "w") as file:
-                print("Create FDR_same_picture.txt")
-                for content, words in unique_picture.items():
-                    if len(words) > 1:
-                        for word in words:
-                            file.write(f"{word}\n")
+        with open("FDR/FDR_same_picture.txt", "w") as file:
+            print("Create FDR_same_picture.txt")
+            for content, words in unique_picture.items():
+                if len(words) > 1:
+                    for word in words:
+                        file.write(f"{word}\n")
 
-        if random_pictures:
-            with open("FDR/FDR_random_pictures.txt", "w") as file:
-                print("Create FDR_random_pictures.txt")
-                for word in random_pictures:
-                    file.write(f"{word}\n")
-
-        break
+    if random_pictures:
+        with open("FDR/FDR_random_pictures.txt", "w") as file:
+            print("Create FDR_random_pictures.txt")
+            for word in random_pictures:
+                file.write(f"{word}\n")

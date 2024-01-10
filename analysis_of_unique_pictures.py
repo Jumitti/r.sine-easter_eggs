@@ -11,7 +11,7 @@ from tqdm import tqdm
 num_threads = os.cpu_count()
 use_threads = num_threads - 2
 print(f"{use_threads} threads used for the script.")
-output_file = "output/result.txt"
+output_file = "SC_per_picture_sorted.txt"
 
 
 def get_word_list(file_path):
@@ -27,7 +27,12 @@ def process_word(word):
 
     content = get_page_content(url)
 
-    return f"{clean_word}  flag: {str(content)}"
+    if content and ("JFIF" in content or "PNG" in content or "Exif" in content or "ICC_PROFILE" in content):
+        return f"{clean_word}  flag: PIC"
+    if content and "GIF" in content:
+        return f"{clean_word}  flag: GIF"
+    else:
+        return f"{clean_word}  flag: {str(content)}"
 
 
 def get_page_content(url):
@@ -48,7 +53,7 @@ def write_to_text(data):
 
 
 if __name__ == "__main__":
-    word_list = get_word_list("output/unique_pictures.txt")
+    word_list = get_word_list("special_words/compilation_unique_pictures.txt")
 
     result_data = []
 

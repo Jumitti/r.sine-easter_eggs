@@ -39,7 +39,6 @@ def get_page_content(url):
 def process_word(word):
     base_url = "https://r.sine.com/"
 
-    # All CAPS
     url = f"{base_url}{word}"
 
     word = re.sub(r'\([^)]*\)', '', word).strip()
