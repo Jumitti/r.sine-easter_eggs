@@ -79,7 +79,7 @@ In the ```special_words``` folder, you will find all the words leading to unique
 
 Some words are internet pages. They are no longer executable on r.sine.com but you can open them by downloading the html and opening them with a browser.
 
-### ```chicken```
+### [```chicken```](https://r.sine.com/chicken)
 
 A scientific chicken article in PDF format. Thank you r.sine.com 😅
 
@@ -87,7 +87,7 @@ A scientific chicken article in PDF format. Thank you r.sine.com 😅
 
 Music group promotion web pages ?
 
-### ```drinking```
+### [```drinking```](https://r.sine.com/drinking)
 
 It's a comic strip on a white background. The white background and the way the GIF is generated are quite atypical.
 
@@ -95,21 +95,29 @@ It's a comic strip on a white background. The white background and the way the G
 
 Web page to comment on photos of Rachel Sterne Twitter ?
 
-### ```lamppost``` ```ready``` ```smart```
+### [```lamppost```](special_words/lamppost.html) ```ready``` ```smart```
 
 Images that no longer work on r.sine.com. HTML work.
 
-### ```monitor``` ```robots```
+### [``music``](https://r.sine.com/music)
+
+A video of Peppa Pig 🐖
+
+### [```monitor```](https://r.sine.com/monito) [```robots```](https://r.sine.com/robots) [```HISTORY```](https://r.sine.com/HISTORY)
 
 A mystery... I have no idea about it
 
-### ```r```
+### [```r```](https://r.sine.com/r)
 
 I don't know if it's a bug or if it's intentional. It's a piece of code that helps us understand how images are returned to us on https://r.sine.com/index.
 
-### ```topmen```
+### [``rathole``](https://r.sine.com/rathole)
 
-Leads to https://www.youtube.com/watch?v=yoy4_h7Pb3M (html broken)
+🎸 Rathooooolllleeeee... 🎵
+
+### [```topmen```](https://r.sine.com/topmen)
+
+Leads to https://www.youtube.com/watch?v=yoy4_h7Pb3M (html broken but works on https://r.sine.com/topmen)
 
 ## Is it done ?
 
