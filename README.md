@@ -43,7 +43,7 @@ Just replace ```index``` from https://r.sine.com/index with an other word (e.g. 
 
 ## Sorted words and examples
 
-Lists are in ```output``` folder
+``output`` (and version) are the post-processing folders. Sometimes my script makes errors because it goes too fast for server responses I think. So I go through the word list several times to be sure. Here, I explain in more detail my reasoning and how I sorted.
 
 - **Cond1**: random image → ```random_pictures.txt``` (e.g. https://r.sine.com/index for legal reasons, I don't display random images)
 
@@ -73,17 +73,25 @@ I don't know why this one don't works to display the image <img style = "width: 
 
 
 
-## Special words
+## [Special words folder](special_words)
 
-In the ```special_words``` folder, you will find all the words leading to unique outputs (**Cond3**) but which are not images.
+In the ```special_words``` folder, you will find all the words leading to unique outputs (**Cond3**).
 
-Some words are internet pages. They are no longer executable on r.sine.com but you can open them by downloading the html and opening them with a browser.
+💡 *Hint: you can click on the titles and names to directly access them*
+
+### List of words founds:
+- [``compilation_unique_pictures.txt``](special_words/compilation_unique_pictures.txt)
+- [``compilation_unique_pictures_2words.txt``](special_words/compilation_unique_pictures_2words.txt)
+
+### List of words that do not lead to images:
+
+Some words are internet pages. They are no longer executable on r.sine.com but I host them so that you have access to them. 
 
 ### [```chicken```](https://r.sine.com/chicken)
 
 A scientific chicken article in PDF format. Thank you r.sine.com 😅
 
-### ```content``` ```farmer```
+### [```content```](https://content-rsine.netlify.app) [```farmer```](https://farmer-rsine.netlify.app)
 
 Music group promotion web pages ?
 
@@ -91,11 +99,11 @@ Music group promotion web pages ?
 
 It's a comic strip on a white background. The white background and the way the GIF is generated are quite atypical.
 
-### ```heaven```
+### [```heaven```](https://heaven-rsine.netlify.app)
 
 Web page to comment on photos of Rachel Sterne Twitter ?
 
-### [```lamppost```](special_words/lamppost.html) ```ready``` ```smart```
+### [```lamppost```](https://lamppost-rsine.netlify.app) [```ready```](https://ready-rsine.netlify.app) [```smart```](https://smart-rsine.netlify.app)
 
 Images that no longer work on r.sine.com. HTML work.
 
@@ -103,7 +111,7 @@ Images that no longer work on r.sine.com. HTML work.
 
 A video of Peppa Pig 🐖
 
-### [```monitor```](https://r.sine.com/monito) [```robots```](https://r.sine.com/robots) [```HISTORY```](https://r.sine.com/HISTORY)
+### [```monitor```](https://r.sine.com/monitor) [```robots```](https://r.sine.com/robots) [```HISTORY```](https://r.sine.com/HISTORY)
 
 A mystery... I have no idea about it
 
