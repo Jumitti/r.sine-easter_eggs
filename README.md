@@ -125,6 +125,10 @@ A video of Peppa Pig 🐖
 
 A mystery... I have no idea about it
 
+Except for robots: https://en.m.wikipedia.org/wiki/Robots.txt
+
+I think this is a reference to the method to prevent Google bots from scanning the site. That makes rsine a deep web site, I guess
+
 #### [```r```](https://r.sine.com/r)
 
 I don't know if it's a bug or if it's intentional. It's a piece of code that helps us understand how images are returned to us on https://r.sine.com/index.
