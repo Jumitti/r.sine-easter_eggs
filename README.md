@@ -71,21 +71,23 @@ I don't know why this one don't works to display the image <img style = "width: 
 
 ### Statistics
 
-1000316 words tested:
-- 1 word does random pictures → index
-- 1716 words lead to a unique things:
-  - 1629 words do a unique images 
-  - 33 images accessible via 2 words (66 words)
-  - 2 images accessible via 3 words (6 words)
-  - 15 words are specials... web page, redirection to youtube, snippet of r.sine code, pdf, broken images (repaired in html), mysteries
+Statistics of V1:
+- 370101 words tested 
+  - 1 word does random pictures → index 
+  - 1531 words lead to a unique things:
+    - 1455 words do a unique images 
+    - 29 images accessible via 2 words (58 words)
+    - 2 images accessible via 3 words (6 words)
+    - 11 words are specials... web page, redirection to youtube, snippet of r.sine code, pdf, broken images (repaired in html), mysteries
 
-
-
-## [Special words folder](special_words)
-
-In the [```special_words```](special_words) folder, you will find all the words leading to unique outputs (**Cond3**).
-
-💡 *Hint: you can click on the titles and names to directly access them*
+Statistics of V2 📈 (2.7x more words analyzed and 185 new words found):
+- 1000316 words tested:
+  - 1 word does random pictures → index 
+  - 1716 words lead to a unique things:
+    - 1631 words do a unique images 
+    - 32 images accessible via 2 words (64 words)
+    - 2 images accessible via 3 words (6 words)
+    - 15 words are specials... web page, redirection to youtube, snippet of r.sine code, pdf, broken images (repaired in html), mysteries
 
 ### List of words founds:
 - [``compilation_unique_pictures.txt``](special_words/compilation_unique_pictures.txt)
