@@ -89,6 +89,15 @@ Statistics of V2 📈 (2.7x more words analyzed and 185 new words found):
     - 2 images accessible via 3 words (6 words)
     - 15 words are specials... web page, redirection to youtube, snippet of r.sine code, pdf, broken images (repaired in html), mysteries
 
+Statistics of V3 📈 (2x more words analyzed and 24 new words found):
+- 1000316 words + 1000001 number (0-1000000) tested:
+  - 1 word does random pictures → index 
+  - 1753 words lead to a unique things:
+    - 1668 words do a unique images 
+    - 32 images accessible via 2 words (64 words)
+    - 2 images accessible via 3 words (6 words)
+    - 15 words are specials... web page, redirection to youtube, snippet of r.sine code, pdf, broken images (repaired in html), mysteries
+  
 ### List of words founds:
 - [``compilation_unique_pictures.txt``](special_words/compilation_unique_pictures.txt)
 - [``compilation_unique_pictures_2words.txt``](special_words/compilation_unique_pictures_2words.txt)

@@ -31,7 +31,7 @@ def process_word(word):
 
 
 if __name__ == "__main__":
-    word_list = get_word_list("special_words/compilation_unique_pictures.txt")
+    word_list = get_word_list("output_v3/unique_pictures.txt")
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=use_threads) as executor:
         with tqdm(total=len(word_list), desc="Running", unit="word", mininterval=0.1) as pbar:
