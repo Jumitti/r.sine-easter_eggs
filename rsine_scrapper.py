@@ -64,7 +64,7 @@ while True:
     use_threads = num_threads
     print(f"{use_threads} threads used for the script.")
 
-    list_of_words = input("Use Wikipedia (1), words.json (2) or number (3) ? ")
+    list_of_words = input("Use Wikipedia (1), words.json (2), number (3), rockyou (4) ? ")
 
     if list_of_words == '1':
         print("Wikipedia selected")
@@ -95,6 +95,7 @@ while True:
             word_list = word_list_upper + word_list_lower
         else:
             print('Wrong input. Choose All (a) or a number between 1-500159)')
+
     elif list_of_words == '3':
         print('Range of number selected')
         range_number = input("Max (m) or a number (type a number between 1-1000000)")
@@ -111,8 +112,22 @@ while True:
                     pbar.update(1)
         else:
             print('Wrong input. Choose Max (m) or a number between 1-1000000)')
+
+    elif list_of_words == '4':
+        print('Rock You !')
+        number_of_words = input("All (a) or a number (type a number between 1-14344391)")
+
+        with open("rockyou.txt", "r", encoding="latin-1") as f:
+            word_list = f.readlines()
+
+        if number_of_words == "a":
+            word_list = [word.strip() for word in word_list]
+        elif 1 <= int(number_of_words) <= 14344391:
+            word_list = random.sample(word_list, int(number_of_words))
+        else:
+            print('Wrong input. Choose All (a) or a number between 1-14344391)')
     else:
-        print("Error. Please use 1 for Wikipedia, 2 for words.json, 3 for number")
+        print("Error. Please use 1 for Wikipedia, 2 for words.json, 3 for number, 4 for Rock You !")
 
     if word_list:
         with concurrent.futures.ThreadPoolExecutor(max_workers=use_threads) as executor:
@@ -124,14 +139,14 @@ while True:
 
         if unique_picture or random_pictures:
             if unique_picture:
-                with open("output_v3/unique_pictures.txt", "w") as file:
+                with open("output_v4/unique_pictures.txt", "w") as file:
                     print("Create unique_pictures.txt")
                     for content, words in unique_picture.items():
                         if len(words) == 1:
                             unique_picture_for_one_word.append(words[0])
                             file.write(f"{words[0]}\n")
 
-                with open("output_v3/same_picture.txt", "w") as file:
+                with open("output_v4/same_picture.txt", "w") as file:
                     print("Create same_picture.txt")
                     for content, words in unique_picture.items():
                         if len(words) > 1:
@@ -139,7 +154,7 @@ while True:
                                 file.write(f"{word}\n")
 
             if random_pictures:
-                with open("output_v3/random_pictures.txt", "w") as file:
+                with open("output_v4/random_pictures.txt", "w") as file:
                     print("Create random_pictures.txt")
                     for word in random_pictures:
                         file.write(f"{word}\n")
