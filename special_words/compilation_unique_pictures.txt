@@ -161,6 +161,7 @@ betrayal
 bfd
 bicycle
 bicyclist
+biden
 bieber
 big
 bill
@@ -839,6 +840,7 @@ lesson
 leverage
 lexington
 leyte
+lgbt
 liberal
 libertarians
 liberty
@@ -1516,6 +1518,7 @@ trashy
 trespassing
 trichomes
 trip
+trollface
 trolling
 trondheim
 tropics
@@ -1546,6 +1549,7 @@ ugliest
 ugly
 uh
 ultima
+umad
 umbrella
 UN
 uncle
