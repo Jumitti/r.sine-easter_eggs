@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 from tqdm import tqdm
 
 num_threads = os.cpu_count()
-use_threads = num_threads - 2
+use_threads = num_threads
 print(f"{use_threads} threads used for the script.")
 output_file = "SC_per_picture_sorted.txt"
 
@@ -28,9 +28,9 @@ def process_word(word):
     content = get_page_content(url)
 
     if content and ("JFIF" in content or "PNG" in content or "Exif" in content or "ICC_PROFILE" in content):
-        return f"{clean_word}  flag: PIC"
+        return f"{clean_word}  flag: PIC\n{content}"
     if content and "GIF" in content:
-        return f"{clean_word}  flag: GIF"
+        return f"{clean_word}  flag: GIF\n{content}"
     else:
         return f"{clean_word}  flag: {str(content)}"
 
@@ -39,6 +39,7 @@ def get_page_content(url):
     try:
         response = requests.get(url)
         if response.status_code == 200:
+            print(response.text)
             return response.text
     except requests.exceptions.RequestException as e:
         print(f"Error : {e}")
@@ -53,7 +54,7 @@ def write_to_text(data):
 
 
 if __name__ == "__main__":
-    word_list = get_word_list("special_words/compilation_unique_pictures.txt")
+    word_list = get_word_list("test.txt")
 
     result_data = []
 

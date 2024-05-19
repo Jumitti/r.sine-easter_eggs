@@ -17,21 +17,17 @@ os.makedirs(output_path, exist_ok=True)
 num_threads = os.cpu_count()
 use_threads = num_threads - 2
 print(f"{use_threads} threads used for the script.")
-output_file = "SC_per_picture_sorted.txt"
-
-
-def get_word_list(file_path):
-    with open(file_path, 'r') as file:
-        return file.read().splitlines()
 
 
 def process_word(word):
-    command = f'curl -o "{os.path.join(output_path, word + ".png")}" https://r.sine.com/{word}'
+    url_word = word.replace(' ', '%20')
+    command = f'curl -o "{os.path.join(output_path, word + ".jpg")}" https://r.sine.com/{url_word}'
     subprocess.run(command, shell=True)
 
 
 if __name__ == "__main__":
-    word_list = get_word_list("output_v3/unique_pictures.txt")
+    with open("output_v4/data.txt", 'r') as file:
+        word_list = file.read().splitlines()
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=use_threads) as executor:
         with tqdm(total=len(word_list), desc="Running", unit="word", mininterval=0.1) as pbar:

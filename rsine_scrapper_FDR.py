@@ -20,11 +20,10 @@ def get_page_content(url):
 
 
 def process_word(word):
+    url_word = word.replace(' ', '%20')
     base_url = "https://r.sine.com/"
 
-    url = f"{base_url}{word}"
-
-    word = re.sub(r'\([^)]*\)', '', word).strip()
+    url = f"{base_url}{url_word}"
 
     content = get_page_content(url)
 
@@ -49,12 +48,11 @@ num_threads = os.cpu_count()
 use_threads = num_threads
 print(f"{use_threads} threads used for the script.")
 
-with open("special_words/compilation_unique_pictures.txt", 'r') as file:
-    print("FDR.txt selected")
-    word_list = file.read().split()
+with open("output_v4/data.txt", 'r') as file:
+    word_list = file.read().splitlines()
 
 with concurrent.futures.ThreadPoolExecutor(max_workers=use_threads) as executor:
-    with tqdm(total=len(word_list), desc="Running", unit="word", mininterval=0.1) as pbar:
+    with tqdm(total=len(word_list), desc="Running", unit="word", mininterval=0.24) as pbar:
         futures = {executor.submit(process_word, word): word for word in word_list}
 
         for future in concurrent.futures.as_completed(futures):

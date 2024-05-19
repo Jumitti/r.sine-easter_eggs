@@ -64,7 +64,7 @@ while True:
     use_threads = num_threads
     print(f"{use_threads} threads used for the script.")
 
-    list_of_words = input("Use Wikipedia (1), words.json (2), number (3), rockyou (4) ? ")
+    list_of_words = input("Use Wikipedia (1), words.json (2), number (3) ? ")
 
     if list_of_words == '1':
         print("Wikipedia selected")
@@ -112,22 +112,6 @@ while True:
                     pbar.update(1)
         else:
             print('Wrong input. Choose Max (m) or a number between 1-1000000)')
-
-    elif list_of_words == '4':
-        print('Rock You !')
-        number_of_words = input("All (a) or a number (type a number between 1-14269790)")
-
-        with open("rockyou2.txt", "r", encoding="latin-1") as f:
-            word_list = f.readlines()
-
-        if number_of_words == "a":
-            word_list = [word.strip() for word in word_list]
-        elif 1 <= int(number_of_words) <= 14269790:
-            word_list = random.sample(word_list, int(number_of_words))
-        else:
-            print('Wrong input. Choose All (a) or a number between 1-14269790)')
-    else:
-        print("Error. Please use 1 for Wikipedia, 2 for words.json, 3 for number, 4 for Rock You !")
 
     if word_list:
         with concurrent.futures.ThreadPoolExecutor(max_workers=use_threads) as executor:

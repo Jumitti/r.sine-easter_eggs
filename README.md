@@ -47,6 +47,9 @@ After that, I made the script to limit the number of requests, but that's a tech
 Just replace ```index``` from https://r.sine.com/index with an other word (e.g. ```advice```) → https://r.sine.com/advice
 <img style = "width: 100%; height: 100%;" src="https://r.sine.com/advice"/>
 
+For V4, I use [EazyPeazyE](https://www.reddit.com/r/rsine/comments/1c6woud/comment/l067o3m/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+suggestion by using https://r.sine.com/index?html=true. With this technique, below the photo we have the name associated with the image. I have with a threading of 8, I reloaded the page for 24 hours and retrieved all the words that came out and the source codes associated with the images to sort them as explained later.
+
 ## Sorted words and examples
 
 ``output`` (and version) are the post-processing folders. Sometimes my script makes errors because it goes too fast for server responses I think. So I go through the word list several times to be sure and I have a ``False Discovery Rate (FDR)`` folder to test it.
@@ -57,7 +60,7 @@ Here, I explain in more detail my reasoning and how I sorted.
 
 
 - **Cond2**: buffer image used for several words → ```same_pictures.txt``` (e.g. https://r.sine.com/nicetry)
-I don't know why this one don't works to display the image <img style = "width: 100%; height: 100%;" src="https://r.sine.com/nicetry"/>
+<img style = "width: 100%; height: 100%;" src="https://r.sine.com/noneed"/>
 
 
 - **Cond3**: 
@@ -97,10 +100,27 @@ Statistics of V3 📈 (2x more words analyzed and 24 new words found):
     - 32 images accessible via 2 words (64 words)
     - 2 images accessible via 3 words (6 words)
     - 15 words are specials... web page, redirection to youtube, snippet of r.sine code, pdf, broken images (repaired in html), mysteries
+
+Statistics of V4 📈 (6094 new words found):
+
+Thanks to [EazyPeazyE](https://www.reddit.com/r/rsine/comments/1c6woud/comment/l067o3m/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+by using https://r.sine.com/index?html=true, we have access to the name of the picture.
+
+- 1000316 words + 1000001 number (0-1000000) tested:
+  - 1 word does random pictures → index 
+  - 7851 words lead to a unique things:
+    - 7033 words do a unique images 
+    - 335 images accessible via 2 words (670 words)
+    - 29 images accessible via 3 words (87 words)
+    - 9 images accessible via 4 words (36 words)
+    - 25 words are specials... web page, redirection to youtube, snippet of r.sine code, pdf, broken images (repaired in html), mysteries
   
+
 ### List of words founds:
 - [``compilation_unique_pictures.txt``](special_words/compilation_unique_pictures.txt)
-- [``compilation_unique_pictures_2words.txt``](special_words/compilation_unique_pictures_2words.txt)
+- [``compilation_unique_pictures_multi_words.txt``](special_words/compilation_unique_pictures_multi_words.txt)
+
+For those who are curious, the picture buffer corresponds to the words [``calm``](https://r.sine.com/calm) and [``noneed``](https://r.sine.com/neneed)
 
 ### List of words that do not lead to images:
 
@@ -112,7 +132,7 @@ Statistics of V3 📈 (2x more words analyzed and 24 new words found):
 
 A scientific chicken article in PDF format. Thank you r.sine.com 😅
 
-#### [```content```](https://content-rsine.netlify.app) [```farmer```](https://farmer-rsine.netlify.app)
+#### [```call-me-a-farmer```](https://call-me-a-farmer-rsine.netlify.app) [```content```](https://content-rsine.netlify.app) [```farmer```](https://farmer-rsine.netlify.app) [```flagstop```](https://flagstop-rsine.netlify.app)
 
 Music group promotion web pages ?
 
@@ -156,9 +176,21 @@ I don't know if it's a bug or if it's intentional. It's a piece of code that hel
 
 Leads to https://www.youtube.com/watch?v=yoy4_h7Pb3M (html broken but works on https://r.sine.com/topmen)
 
+#### [```dickbong2```](https://r.sine.com/dickbong2) [```immigrantaxis```](https://r.sine.com/immigrantaxis) [```test-old```](https://r.sine.com/test-old)
+
+These words are broken and we have no source code for the image so probably the photos no longer exist
+
+#### [```javascript```](https://r.sine.com/javascript) [```somuchgritty```](https://r.sine.com/somuchgritty)
+
+Access forbidden, Oddly, with ``index`` we can have access to them but why give the possibility of coming across these pages by chance?
+
+#### [```hey+you```](https://r.sine.com/hey%2Byou) [```loaded? don't take chances with pickups!```](https://r.sine.com/loaded?%20don%27t%20take%20chances%20with%20pickups!)
+
+Request more investigation. Oddly, with ``index`` we can have access to it but I don't have the source code but if we search for it manually I can't find them
+
 ## Is it done ?
 
-I don't know. I stupidly sifted words. And I know that certain words are not there (example: www; I still added it in the output). There are probably still plenty of words and ester eggs. If you know words that I didn't find, put them in [Issues](https://github.com/Jumitti/r.sine-easter_eggs/issues) or on [Reddit post](https://www.reddit.com/r/rsine/comments/17t51o6/rsine_easter_eggs/).
+I think we found everything, then if we looked carefully... the creator left a clue 😉 but you won't find it in this GitHub 😉
 
 ## Disclaimer
 

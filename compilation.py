@@ -1,6 +1,6 @@
 file1_path = "special_words/compilation_unique_pictures.txt"
-file2_path = "output_v3/unique_pictures.txt"
-output_file_path = "special_words/compilation_unique_pictures.txt"
+file2_path = "FDR/FDR_unique_pictures.txt"
+output_file_path = "special_words/compilation_unique_pictures2.txt"
 
 with open(file1_path, 'r') as file1:
     lines_file1 = set(file1.read().splitlines())
