@@ -60,7 +60,7 @@ Here, I explain in more detail my reasoning and how I sorted.
 
 
 - **Cond2**: buffer image used for several words → ```same_pictures.txt``` (e.g. https://r.sine.com/nicetry)
-<img style = "width: 100%; height: 100%;" src="https://r.sine.com/noneed"/>
+  <img style = "width: 100%; height: 100%;" src="https://r.sine.com/noneed"/>
 
 
 - **Cond3**: 
