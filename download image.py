@@ -26,7 +26,7 @@ def process_word(word):
 
 
 if __name__ == "__main__":
-    with open("output_v4/data.txt", 'r') as file:
+    with open("special_words/compilation_unique_pictures.txt", 'r') as file:
         word_list = file.read().splitlines()
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=use_threads) as executor:
