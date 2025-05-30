@@ -1,5 +1,5 @@
 # r.sine Easter Eggs Finder
-<img style = "width: 100%; height: 100%;" src="https://sine.com/wellplayed.gif" alt=""/>
+<img style = "width: 100%; height: 100%;" src="image/wellplayed.gif" alt=""/>
 
 ## Description
 [r.sine](https://r.sine.com/index) (and [sine](https://sine.com/index)) is a website that displays a random image or gif each time the page is refreshed. 
@@ -10,7 +10,7 @@ Either the word displays random images (e.g. https://sine.com/index ), or the wo
 probably when the word is not addressed to an image. I decided to use a script to discover all the possible words to use.
 Yes, it's stupid. Welcome to the internet.
 
-<img style = "width: 100%; height: 100%;" src="https://sine.com/www" alt=""/>
+<img style = "width: 100%; height: 100%;" src="image/www.gif" alt=""/>
 
 ## Where to find r.sine
 
@@ -33,9 +33,9 @@ For this, I use either [Wikipedia's word frequency lists](https://en.wiktionary.
 or [```words.txt```](https://github.com/dwyl/english-words/blob/master/words.txt) from [english-words GitHub Repo](https://github.com/dwyl/english-words).
 The word list I'm using has a problem... Those are only lowercase words. And certain words in lowercase do not give the same image as in uppercase so my script obviously tests both versions.
 
-| https://sine.com/science                                                       | https://sine.com/SCIENCE                                                   |
-|--------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <img style = "width: 100%; height: 100%;" src="https://sine.com/science.jpg"/> | <img style = "width: 100%; height: 100%;" src="https://sine.com/SCIENCE"/> |
+| https://sine.com/science                                           | https://sine.com/SCIENCE                                           |
+|--------------------------------------------------------------------|--------------------------------------------------------------------|
+| <img style = "width: 100%; height: 100%;" src="image/science.jpg"> | <img style = "width: 100%; height: 100%;" src="image/SCIENCE.gif"> |
 
 
 Then I make a first request for a specific word and retrieve the image source code. 
@@ -52,7 +52,7 @@ After that, I made the script to limit the number of requests, but that's a tech
 ## How to test word
 
 Just replace ```index``` from https://sine.com/index with an other word (e.g. ```advice```) → https://sine.com/advice
-<img style = "width: 100%; height: 100%;" src="https://sine.com/advice"/>
+<img style = "width: 100%; height: 100%;" src="image/advice.jpg"/>
 
 For V4, I use [EazyPeazyE](https://www.reddit.com/r/rsine/comments/1c6woud/comment/l067o3m/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 suggestion by using https://sine.com/index?html=true. With this technique, below the photo we have the name associated with the image. I have with a threading of 8, I reloaded the page for 24 hours and retrieved all the words that came out and the source codes associated with the images to sort them as explained later.
@@ -67,17 +67,17 @@ Here, I explain in more detail my reasoning and how I sorted.
 
 
 - **Cond2**: buffer image used for several words → ```same_pictures.txt``` (e.g. https://sine.com/nicetry)
-  <img style = "width: 100%; height: 100%;" src="https://sine.com/noneed"/>
+  <img style = "width: 100%; height: 100%;" src="image/noneed.gif"/>
 
 
 - **Cond3**: 
   - single image for one word → ```unique_pictures.txt``` (e.g. https://sine.com/admin)
-    <img style = "width: 100%; height: 100%;" src="https://sine.com/admin"/>
+    <img style = "width: 100%; height: 100%;" src="image/admin.gif"/>
   - single image for 2 or more words → ```unique_pictures_2words.txt``` (e.g. https://sine.com/bird and https://sine.com/parrot)
   
-    | https://sine.com/bird                                                   | https://sine.com/parrot                                                   |
-    |---------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-    | <img style = "width: 100%; height: 100%;" src="https://sine.com/bird"/> | <img style = "width: 100%; height: 100%;" src="https://sine.com/parrot"/> |
+    | https://sine.com/bird                                            | https://sine.com/parrot                                            |
+    |------------------------------------------------------------------|--------------------------------------------------------------------|
+    | <img style = "width: 100%; height: 100%;" src="image/bird.gif"/> | <img style = "width: 100%; height: 100%;" src="image/parrot.gif"/> |
 
 ### Statistics
 
