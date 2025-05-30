@@ -1,16 +1,23 @@
 # r.sine Easter Eggs Finder
-<img style = "width: 100%; height: 100%;" src="https://r.sine.com/wellplayed" alt=""/>
+<img style = "width: 100%; height: 100%;" src="https://sine.com/wellplayed" alt=""/>
 
 ## Description
-[r.sine](https://r.sine.com/index) is a website that displays a random image or gif each time the page is refreshed. 
-The site can be accessed at https://r.sine.com/index. However, while poking around, 
+[r.sine](https://sine.com/index) (and [sine](https://sine.com/index)) is a website that displays a random image or gif each time the page is refreshed. 
+The site can be accessed at https://sine.com/index. However, while poking around, 
 I realized that if you replace "index" with other words, the images are no longer random. We have 3 possible cases. 
-Either the word displays random images (e.g. https://r.sine.com/index ), or the word displays a single image 
-(e.g. https://r.sine.com/admin), or the word displays a "buffer" image which is used for several words, 
+Either the word displays random images (e.g. https://sine.com/index ), or the word displays a single image 
+(e.g. https://sine.com/admin), or the word displays a "buffer" image which is used for several words, 
 probably when the word is not addressed to an image. I decided to use a script to discover all the possible words to use.
 Yes, it's stupid. Welcome to the internet.
 
-<img style = "width: 100%; height: 100%;" src="https://r.sine.com/www" alt=""/>
+<img style = "width: 100%; height: 100%;" src="https://sine.com/www" alt=""/>
+
+## Where to find r.sine
+
+The most well-known URL is [https://sine.com/index](https://sine.com/index).  
+Unfortunately, it is currently returning a *Forbidden* error and we no longer have access to that server.  
+Thankfully, [https://sine.com/index](https://sine.com/index) still works and provides the same functionality.
+
 
 ## How it works
 
@@ -26,9 +33,9 @@ For this, I use either [Wikipedia's word frequency lists](https://en.wiktionary.
 or [```words.txt```](https://github.com/dwyl/english-words/blob/master/words.txt) from [english-words GitHub Repo](https://github.com/dwyl/english-words).
 The word list I'm using has a problem... Those are only lowercase words. And certain words in lowercase do not give the same image as in uppercase so my script obviously tests both versions.
 
-| https://r.sine.com/science                                                   | https://r.sine.com/SCIENCE                                                   |
+| https://sine.com/science                                                   | https://sine.com/SCIENCE                                                   |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <img style = "width: 100%; height: 100%;" src="https://r.sine.com/science"/> | <img style = "width: 100%; height: 100%;" src="https://r.sine.com/SCIENCE"/> |
+| <img style = "width: 100%; height: 100%;" src="https://sine.com/science"/> | <img style = "width: 100%; height: 100%;" src="https://sine.com/SCIENCE"/> |
 
 
 Then I make a first request for a specific word and retrieve the image source code. 
@@ -44,11 +51,11 @@ After that, I made the script to limit the number of requests, but that's a tech
 
 ## How to test word
 
-Just replace ```index``` from https://r.sine.com/index with an other word (e.g. ```advice```) → https://r.sine.com/advice
-<img style = "width: 100%; height: 100%;" src="https://r.sine.com/advice"/>
+Just replace ```index``` from https://sine.com/index with an other word (e.g. ```advice```) → https://sine.com/advice
+<img style = "width: 100%; height: 100%;" src="https://sine.com/advice"/>
 
 For V4, I use [EazyPeazyE](https://www.reddit.com/r/rsine/comments/1c6woud/comment/l067o3m/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
-suggestion by using https://r.sine.com/index?html=true. With this technique, below the photo we have the name associated with the image. I have with a threading of 8, I reloaded the page for 24 hours and retrieved all the words that came out and the source codes associated with the images to sort them as explained later.
+suggestion by using https://sine.com/index?html=true. With this technique, below the photo we have the name associated with the image. I have with a threading of 8, I reloaded the page for 24 hours and retrieved all the words that came out and the source codes associated with the images to sort them as explained later.
 
 ## Sorted words and examples
 
@@ -56,21 +63,21 @@ suggestion by using https://r.sine.com/index?html=true. With this technique, bel
 
 Here, I explain in more detail my reasoning and how I sorted.
 
-- **Cond1**: random image → ```random_pictures.txt``` (e.g. https://r.sine.com/index for legal reasons, I don't display random images)
+- **Cond1**: random image → ```random_pictures.txt``` (e.g. https://sine.com/index for legal reasons, I don't display random images)
 
 
-- **Cond2**: buffer image used for several words → ```same_pictures.txt``` (e.g. https://r.sine.com/nicetry)
-  <img style = "width: 100%; height: 100%;" src="https://r.sine.com/noneed"/>
+- **Cond2**: buffer image used for several words → ```same_pictures.txt``` (e.g. https://sine.com/nicetry)
+  <img style = "width: 100%; height: 100%;" src="https://sine.com/noneed"/>
 
 
 - **Cond3**: 
-  - single image for one word → ```unique_pictures.txt``` (e.g. https://r.sine.com/admin)
-    <img style = "width: 100%; height: 100%;" src="https://r.sine.com/admin"/>
-  - single image for 2 or more words → ```unique_pictures_2words.txt``` (e.g. https://r.sine.com/bird and https://r.sine.com/parrot)
+  - single image for one word → ```unique_pictures.txt``` (e.g. https://sine.com/admin)
+    <img style = "width: 100%; height: 100%;" src="https://sine.com/admin"/>
+  - single image for 2 or more words → ```unique_pictures_2words.txt``` (e.g. https://sine.com/bird and https://sine.com/parrot)
   
-    | https://r.sine.com/bird                                                   | https://r.sine.com/parrot                                                   |
+    | https://sine.com/bird                                                   | https://sine.com/parrot                                                   |
     |---------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-    | <img style = "width: 100%; height: 100%;" src="https://r.sine.com/bird"/> | <img style = "width: 100%; height: 100%;" src="https://r.sine.com/parrot"/> |
+    | <img style = "width: 100%; height: 100%;" src="https://sine.com/bird"/> | <img style = "width: 100%; height: 100%;" src="https://sine.com/parrot"/> |
 
 ### Statistics
 
@@ -104,7 +111,7 @@ Statistics of V3 📈 (2x more words analyzed and 24 new words found):
 Statistics of V4 📈 (6094 new words found):
 
 Thanks to [EazyPeazyE](https://www.reddit.com/r/rsine/comments/1c6woud/comment/l067o3m/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
-by using https://r.sine.com/index?html=true, we have access to the name of the picture.
+by using https://sine.com/index?html=true, we have access to the name of the picture.
 
 - 1000316 words + 1000001 number (0-1000000) tested:
   - 1 word does random pictures → index 
@@ -120,7 +127,7 @@ by using https://r.sine.com/index?html=true, we have access to the name of the p
 - [``compilation_unique_pictures.txt``](special_words/compilation_unique_pictures.txt)
 - [``compilation_unique_pictures_multi_words.txt``](special_words/compilation_unique_pictures_multi_words.txt)
 
-For those who are curious, the picture buffer corresponds to the words [``calm``](https://r.sine.com/calm) and [``noneed``](https://r.sine.com/neneed)
+For those who are curious, the picture buffer corresponds to the words [``calm``](https://sine.com/calm) and [``noneed``](https://sine.com/neneed)
 
 ### List of words that do not lead to images:
 
@@ -128,7 +135,7 @@ For those who are curious, the picture buffer corresponds to the words [``calm``
 
 *Note 2: since certain words do not lead to images, in the [```special_words```](special_words) folder you will find the source code given by the word in question (in html or txt or pdf version)*
 
-#### [```chicken```](https://r.sine.com/chicken)
+#### [```chicken```](https://sine.com/chicken)
 
 A scientific chicken article in PDF format. Thank you r.sine.com 😅
 
@@ -136,7 +143,7 @@ A scientific chicken article in PDF format. Thank you r.sine.com 😅
 
 Music group promotion web pages ?
 
-#### [```drinking```](https://r.sine.com/drinking)
+#### [```drinking```](https://sine.com/drinking)
 
 It's a comic strip on a white background. The white background and the way the GIF is generated are quite atypical.
 
@@ -148,11 +155,11 @@ Web page to comment on photos of Rachel Sterne Twitter ?
 
 Images that no longer work on r.sine.com. HTML work.
 
-#### [``music``](https://r.sine.com/music)
+#### [``music``](https://sine.com/music)
 
 A video of Peppa Pig 🐖
 
-#### [```monitor```](https://r.sine.com/monitor) [```robots```](https://r.sine.com/robots) [```HISTORY```](https://r.sine.com/HISTORY)
+#### [```monitor```](https://sine.com/monitor) [```robots```](https://sine.com/robots) [```HISTORY```](https://sine.com/HISTORY)
 
 A mystery... I have no idea about it
 
@@ -160,31 +167,31 @@ Except for robots: https://en.m.wikipedia.org/wiki/Robots.txt
 
 I think this is a reference to the method to prevent Google bots from scanning the site. That makes rsine a deep web site, I guess
 
-#### [```r```](https://r.sine.com/r)
+#### [```r```](https://sine.com/r)
 
-I don't know if it's a bug or if it's intentional. It's a piece of code that helps us understand how images are returned to us on https://r.sine.com/index.
+I don't know if it's a bug or if it's intentional. It's a piece of code that helps us understand how images are returned to us on https://sine.com/index.
 
-#### [``rathole``](https://r.sine.com/rathole)
+#### [``rathole``](https://sine.com/rathole)
 
 🎸 Rathooooolllleeeee... 🎵
 
-#### [``pong``](https://r.sine.com/pong)
+#### [``pong``](https://sine.com/pong)
 
 🏓
 
-#### [```topmen```](https://r.sine.com/topmen)
+#### [```topmen```](https://sine.com/topmen)
 
-Leads to https://www.youtube.com/watch?v=yoy4_h7Pb3M (html broken but works on https://r.sine.com/topmen)
+Leads to https://www.youtube.com/watch?v=yoy4_h7Pb3M (html broken but works on https://sine.com/topmen)
 
-#### [```dickbong2```](https://r.sine.com/dickbong2) [```immigrantaxis```](https://r.sine.com/immigrantaxis) [```test-old```](https://r.sine.com/test-old)
+#### [```dickbong2```](https://sine.com/dickbong2) [```immigrantaxis```](https://sine.com/immigrantaxis) [```test-old```](https://sine.com/test-old)
 
 These words are broken and we have no source code for the image so probably the photos no longer exist
 
-#### [```javascript```](https://r.sine.com/javascript) [```somuchgritty```](https://r.sine.com/somuchgritty)
+#### [```javascript```](https://sine.com/javascript) [```somuchgritty```](https://sine.com/somuchgritty)
 
 Access forbidden, Oddly, with ``index`` we can have access to them but why give the possibility of coming across these pages by chance?
 
-#### [```hey+you```](https://r.sine.com/hey%2Byou) [```loaded? don't take chances with pickups!```](https://r.sine.com/loaded?%20don%27t%20take%20chances%20with%20pickups!)
+#### [```hey+you```](https://sine.com/hey%2Byou) [```loaded? don't take chances with pickups!```](https://sine.com/loaded?%20don%27t%20take%20chances%20with%20pickups!)
 
 Request more investigation. Oddly, with ``index`` we can have access to it but I don't have the source code but if we search for it manually I can't find them
 
