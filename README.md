@@ -2,7 +2,7 @@
 <img style = "width: 100%; height: 100%;" src="https://sine.com/wellplayed" alt=""/>
 
 ## Description
-[r.sine](https://sine.com/index) (and [sine](https://sine.com/index)) is a website that displays a random image or gif each time the page is refreshed. 
+[r.sine](https://r.sine.com/index) (and [sine](https://sine.com/index)) is a website that displays a random image or gif each time the page is refreshed. 
 The site can be accessed at https://sine.com/index. However, while poking around, 
 I realized that if you replace "index" with other words, the images are no longer random. We have 3 possible cases. 
 Either the word displays random images (e.g. https://sine.com/index ), or the word displays a single image 
@@ -14,7 +14,7 @@ Yes, it's stupid. Welcome to the internet.
 
 ## Where to find r.sine
 
-The most well-known URL is [https://sine.com/index](https://sine.com/index).  
+The most well-known URL is [https://r.sine.com/index](https://r.sine.com/index).  
 Unfortunately, it is currently returning a *Forbidden* error and we no longer have access to that server.  
 Thankfully, [https://sine.com/index](https://sine.com/index) still works and provides the same functionality.
 
