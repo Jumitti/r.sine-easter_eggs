@@ -1,5 +1,5 @@
 # r.sine Easter Eggs Finder
-<img style = "width: 100%; height: 100%;" src="https://sine.com/wellplayed" alt=""/>
+<img style = "width: 100%; height: 100%;" src="https://sine.com/wellplayed.gif" alt=""/>
 
 ## Description
 [r.sine](https://r.sine.com/index) (and [sine](https://sine.com/index)) is a website that displays a random image or gif each time the page is refreshed. 
@@ -33,9 +33,9 @@ For this, I use either [Wikipedia's word frequency lists](https://en.wiktionary.
 or [```words.txt```](https://github.com/dwyl/english-words/blob/master/words.txt) from [english-words GitHub Repo](https://github.com/dwyl/english-words).
 The word list I'm using has a problem... Those are only lowercase words. And certain words in lowercase do not give the same image as in uppercase so my script obviously tests both versions.
 
-| https://sine.com/science                                                   | https://sine.com/SCIENCE                                                   |
-|------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| <img style = "width: 100%; height: 100%;" src="https://sine.com/science"/> | <img style = "width: 100%; height: 100%;" src="https://sine.com/SCIENCE"/> |
+| https://sine.com/science                                                       | https://sine.com/SCIENCE                                                   |
+|--------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+| <img style = "width: 100%; height: 100%;" src="https://sine.com/science.jpg"/> | <img style = "width: 100%; height: 100%;" src="https://sine.com/SCIENCE"/> |
 
 
 Then I make a first request for a specific word and retrieve the image source code. 
@@ -191,9 +191,14 @@ These words are broken and we have no source code for the image so probably the 
 
 Access forbidden, Oddly, with ``index`` we can have access to them but why give the possibility of coming across these pages by chance?
 
-#### [```hey+you```](https://sine.com/hey%2Byou) [```loaded? don't take chances with pickups!```](https://sine.com/loaded?%20don%27t%20take%20chances%20with%20pickups!)
+#### [```hey+you```](https://sine.com/hey%2Byou)
 
 Request more investigation. Oddly, with ``index`` we can have access to it but I don't have the source code but if we search for it manually I can't find them
+However, there is this image which has almost the same name: [https://sine.com/heyyou](https://sine.com/heyyou)
+
+#### [```loaded? don't take chances with pickups!```](https://sine.com/loaded?%20don%27t%20take%20chances%20with%20pickups!)
+
+Probably this image but I can't display it on r.sine.com [https://vdarchive.newmedialab.cuny.edu/items/show/229](https://vdarchive.newmedialab.cuny.edu/items/show/229)
 
 ## Is it done ?
 
